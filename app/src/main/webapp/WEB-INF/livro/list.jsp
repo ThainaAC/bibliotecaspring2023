@@ -6,14 +6,17 @@
         <head>
             <meta charset="UTF-8" />
             <title>Livros</title>
+            <link rel="stylesheet" href="/css/bootstrap.min.css">
         </head>
 
         <body>
+            <div class="container">
             <h1>Livros</h1>
-            <table>
+            <a href="/livro/insert" class="btn.bnt-primary">Novo Livro</a>
+            <table class="table">
                 <th>
-                <th>Id</th>
-                <th>Titulo</th>
+                    <th>Id</th>
+                    <th>Titulo</th>
                 </th>
                 <c:forEach var="item" items="${livros}">
                     <tr>
@@ -22,6 +25,7 @@
                     </tr>
                 </c:forEach>
             </table>
+        </div>
         </body>
 
         </html>
