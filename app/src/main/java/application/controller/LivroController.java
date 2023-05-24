@@ -1,6 +1,5 @@
 package application.controller;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,11 +17,11 @@ public class LivroController {
     @RequestMapping("/list")
     public String list(Model model) {
         model.addAttribute("livros", livroRepo.findAll());
-        return "/WEB-INF/livo/list.jsp";
+        return "/WEB-INF/livro/list.jsp";
     }
 
     @RequestMapping("/insert")
     public String insert() {
-        return  "/WEB-INF/livo/list.jsp";
+        return "/WEB-INF/livro/insert.jsp";
     }
 }
